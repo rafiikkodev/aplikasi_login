@@ -1,9 +1,10 @@
-## GANTI DI DATABASE
+# GANTI DI DATABASE
 
--------------------------------------------------------------------------------------------------------------------------------
-## MOBILE WEB SERVICE PRAKTIK (CREATE LOGIN)
--------------------------------------------------------------------------------------------------------------------------------
+---
 
+## Mobile Web Service Praktik (Create Login)
+
+```php
 <?php
 include "koneksi.php";
 
@@ -22,10 +23,9 @@ if (!$email || !$username || !$password || !$role) {
         echo json_encode(array('message' => 'login data failed to add'));
     }
 }
+?>
 
--------------------------------------------------------------------------------------------------------------------------------
-## MOBILE WEB SERVICE TEORI (CREATE LOGIN)
--------------------------------------------------------------------------------------------------------------------------------
+## Mobile Web Service Teori (Create Login)
 
 <?php
 include "koneksi.php";
@@ -45,3 +45,4 @@ if (!$email || !$username || !$password || !$gender) {
         echo json_encode(array('message' => 'login data failed to add'));
     }
 }
+?>
